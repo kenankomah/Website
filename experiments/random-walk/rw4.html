@@ -1,0 +1,70 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Random Walk 5</title>
+   <link rel="stylesheet" type="text/css" href="randwalk.css"> 
+      
+<style>
+
+li #round1{
+ 	box-shadow: 0 1px rgba(255,255,255,0.2) inset;
+	-webkit-box-shadow: 0 1px rgba(255,255,255,0.2) inset;
+	border-color: #c3c3c3 !important;
+	background: #4D4D4D; /* Old browsers */
+	background: -moz-linear-gradient(top, #C3C3C3 0%, #919191 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#C3C3C3 ), color-stop(100%,#919191)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, #C3C3C3 0%, #919191 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, #C3C3C3 0%, #919191 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, #C3C3C3  0%, #919191 100%); /* IE10+ */
+	background: linear-gradient(top, #C3C3C3 0%, #919191 100%); /* W3C */
+	color:#000;
+	/*border: solid 1px #c3c3c3;*/
+}
+
+</style>
+</head> 
+ 
+<body onkeydown = 'keyDown(event);' style="background: url(bgnoise_lg.png) repeat left top;"> 
+<div id='centre'>
+    <canvas id="myCanvas" width="800" height="500"></canvas>
+
+<div id='navigation'>
+	<ul>
+		<li class='menu'><a href="rw.html" id='round'>random walk </a></li>
+		<li class='menu'><a href="rw1.html" class='nav'>random walk 2 </a></li>
+		<li class='menu'><a href="rw2.html" class='nav'>random walk 3 </a></li>
+		<li class='menu'><a href="rw3.html" class='nav'>random walk 4 </a></li>
+		<li class='menu'><a href="" id='round1'>random walk 5 </a></li>
+	</ul>	
+</div>
+
+<p id='number'>Number of steps: <span id='steps'>0</span> </p>	
+<h3 id="one" onclick="pause()">&nbsp;Pause</h3>
+<h3 id="two" onclick="reset()">&nbsp;New Simulation</h3>
+
+
+<div id='paragraph'>
+<h1>Random Walk</h1>
+<p>Random walk simulations are used in science and economics to model nature or stock markets. On this site you can see a few that I have created for fun</p>.
+</div>
+
+<div id='notes'>
+<h1>Notes on the simulation</h1>
+<p> This simulation will stop after <b>25,000</b> steps.  Each step is 2px long and randomly moves in any direction between 0 and 360 degrees and not just up, down, right or left. <br/><br/> The graphics are created using the HTML5 canvas element and the programming is done with JavaScript.</p>
+</div>
+
+</div>
+<div id="footer">
+	<div id='line'>
+		<ul id='foot'>
+			<li><a href="../../contact.php"><span class='foottext'>Contact</span></a></li>
+			<li><a href="../../about.php"><span class='foottext'> About</span></a></li>
+			<li id='border'><a href="../../index.html"><span class='foottext'> Home </span></a></li>
+		</ul>
+	</div>
+</div>
+<div id='copy'><p> All Rights Reserved 2015 &copy Kenneth Ankomah. </p> </div>
+
+<script src='scripts/randomwalk4.js'>   </script>
+</body>
+</html>

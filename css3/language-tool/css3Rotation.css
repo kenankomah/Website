@@ -1,0 +1,112 @@
+.flip3D{
+	width:180px;
+	height:150px;
+	margin:10px;
+	float:left;
+}
+
+
+#clear1, #clear2, #clear3{
+    float:left;
+	clear:left;
+}
+
+
+.flip3D .front{
+	position:absolute;
+	transform: perspective(600px) rotateY(0deg);
+	background:#FC0; width:180px; height:150px; border-radius: 7px;
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#FFFFFF), color-stop(100%,#FC0)); /* Chrome,Safari4+ */
+		background: -webkit-linear-gradient(top, #FFFFFF 0%,#FC0 100%); /* Chrome10+,Safari5.1+ */
+		background: -moz-linear-gradient(top, #FFFFFF 0%, #FC0 100%);
+		background: -o-linear-gradient(top, #FFFFFF 0%, #FC0 100%); /* Opera 11.10+ */
+		background: -ms-linear-gradient(top, #FFFFFF 0%, #FC0 100%); /* IE10+ */
+		background: linear-gradient(top, #FFFFFF 0%, #FC0 100%); /* W3C */
+
+	backface-visibility: hidden; /* so that only the front face is invisible */
+	transition: -webkit-transform .5s linear 0s;
+	transition: transform .5s linear 0s;
+	
+
+	text-align: center;
+	font-style: italic;
+	line-height: 155px;
+	font-size: 25px;
+	box-shadow: 10px 10px 8px #888888;
+}
+
+.flip3D .back{
+	position:absolute;
+	transform: perspective(600px) rotateY(180deg); /* 180deg this means that the back face is flipped by default */
+	background:#80bfff; width:180px; height:150px; border-radius: 7px;
+		background: -webkit-linear-gradient(top, #FFFFFF 0%,#80bfff 100%); /* Chrome10+,Safari5.1+ */
+		background: -moz-linear-gradient(top, #FFFFFF 0%, #80bfff 100%);
+		background: -o-linear-gradient(top, #FFFFFF 0%, #80bfff 100%); /* Opera 11.10+ */
+		background: -ms-linear-gradient(top, #FFFFFF 0%,#80bfff 100%); /* IE10+ */
+		background: linear-gradient(top, #FFFFFF 0%, #80bfff 100%); /* W3C */
+
+
+	backface-visibility: hidden;
+	transition: -webkit-transform .5s linear 0s;
+	transition: transform .5s linear 0s;
+
+
+	text-align:center;
+	font-style:italic;
+	line-height:155px;
+	font-size:25px;
+	box-shadow: 10px 10px 8px #888888;
+}
+
+
+.flip3D:active > .front{
+	transform: perspective(600px) rotateY(-180deg);
+}
+
+.flip3D:active > .back{
+	transform: perspective(600px) rotateY(0deg);
+}
+
+
+img{
+	border-radius: 7px;
+}
+
+.krank{
+	font-size:20px;
+}
+
+
+#clear3{
+	position: relative;
+	top: -10px;
+	margin-bottom:10px; 
+}
+
+
+#clear2{
+	position: relative;
+ 	top: -10px;
+}
+
+
+#clear1{
+	position: relative;
+	top: -10px;
+}
+
+
+#clear{
+	position: relative;
+ 	top: -10px;
+}
+
+.back, .front {  /* used to prevent the images from being highlighted in blue when clicked on*/
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+

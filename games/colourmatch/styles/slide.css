@@ -1,0 +1,71 @@
+#flip,#flip1{
+    position: relative;
+	width:400px;
+	padding:5px;
+	text-align:center;
+	background-color:#e5e5e5;
+	border:solid 1px #c3c3c3;
+	margin-bottom:10px;
+	margin-top:10px;
+	font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
+	font-size: 15px;
+	border-radius:15px;
+	/*top:0px;
+	/*left:740px;*/
+	box-shadow: 5px 5px 5px #888888;
+}
+
+
+#panel,#panel1{
+	position: relative;
+	width:380px;
+	padding-top:15px;
+	padding-bottom:15px;
+	padding-left:15px;
+	padding-right:15px;
+
+	text-align:left;
+	font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
+	font-size: 15px;
+	
+	background: -moz-linear-gradient(top, #FFFFFF 0%, #E3E3E3 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#FFFFFF), color-stop(100%,#E3E3E3)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, #FFFFFF 0%,#E3E3E3 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, #FFFFFF 0%,#E3E3E3 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, #FFFFFF 0%,#E3E3E3 100%); /* IE10+ */
+	background: linear-gradient(top, #FFFFFF 0%,#E3E3E3 100%); 
+
+	margin-bottom:20px;
+	border:solid 1px #c3c3c3;
+	border-radius:5px;
+	display:none;
+	z-index:1;
+	/*top:0px;
+	/*left:740px;
+	z-index:1;
+	box-shadow: 10px 10px 10px #888888;*/
+	
+}
+
+#container{
+	position: absolute;
+	width:400px;
+	height:300px;
+	/*border:1px black solid;
+	/*top:155px;*/
+	top: 250px;
+	left:595px;
+}
+
+
+ 
+#wiki:hover{
+	color:blue;
+	background:#eaeaea;
+}
+
+ 
+#wiki{
+	color:blue;
+	text-decoration:none;
+}

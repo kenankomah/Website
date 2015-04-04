@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Colour Match</title>
+
+<link rel="stylesheet" type="text/css" href="styles/colourMatch.css">
+<link rel="stylesheet" type="text/css" href="styles/slide.css"> 
+
+<style>
+
+li #cm{
+ 	box-shadow: 0 1px rgba(255,255,255,0.2) inset;
+	-webkit-box-shadow: 0 1px rgba(255,255,255,0.2) inset;
+	border-color: #c3c3c3 !important;
+	background: #4D4D4D; /* Old browsers */
+	background: -moz-linear-gradient(top, #C3C3C3 0%, #919191 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#C3C3C3 ), color-stop(100%,#919191)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, #C3C3C3 0%, #919191 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, #C3C3C3 0%, #919191 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, #C3C3C3  0%, #919191 100%); /* IE10+ */
+	background: linear-gradient(top, #C3C3C3 0%, #919191 100%); /* W3C */
+	color:#000;
+	/*border: solid 1px #c3c3c3;*/
+}
+
+</style>
+</head>
+
+<body onload="init();" onkeydown="keyDown(event);" style="background: url(images/bgnoise_lg.png) repeat left top;">
+<div id="centre">	
+<canvas id="myCanvas" height="360px" width="160px" style="background-color:#D9D8FE"></canvas>
+		
+<canvas id="myCanvasB" height="120px" width="60px"> </canvas>
+
+<div id="score" style="width:160px;background-color:#CCCCCC">
+    Level 1   Score: 0
+</div>
+
+<h3 id="one" onclick="pause()">&nbsp;Pause</h3>
+<h3 id="two" onclick="initialize()">&nbsp;New Game</h3> 
+
+<h1> Colour Match Rules and Details</h1>
+
+<div id='paragraph'>
+<p> The bars below will give you some information about the game. Click on them to either expand them for more information or to hide them again. </p>
+</div>
+
+<div id='container'> 
+<div id="flip" onclick='rules()' style="cursor:pointer">Show Rules</div>
+<div id="panel"><b>Aim:</b> The aim of this game is to score points by creating a match of 3, 4, or 5 blocks of the same colour either horizontally, vertically or diagonally, when a pattern is achieved the blocks forming the pattern will disappear. You will score 1 point for each block that disappears.<br/><br/><b>How to play:</b> Each falling column will contain three blocks that you can move to the left or right by using the arrow keys. Use the down key to make the column fall faster and the the up key to change the arrangement of the blocks in the column.<br/><br/>Look out for the special black by column, when it lands on a block, that block and every other of the same colour will disappear giving you extra points. The small window on the top right shows the next column. Use the space bar as another way to pause or play.</div>
+
+<div id="flip1" onclick='info()' style="cursor:pointer">More Details</div>
+<div id="panel1"><b>Background:</b> This game is strongly influenced by the game <a id='wiki' href='http://en.wikipedia.org/wiki/Columns_%28video_game%29' target="_blank"> Columns </a> created by Sega 1989. I have added a few new features for my version.<br/><br/><b>Technical info:</b> I used the HTML5 canvas element to create the graphics for the game. For the sound I used the JavaScript audio object. <br/><br/>The animation and programming was all done with JavaScript.</div>
+
+</div>
+	<ul>
+		<li class='menu'><a href="../shooter/shter.html" id='round'>Shooter</a></li>
+		<li class='menu'><a href="../shooter/shter-ai.html" class='nav'>Shooter AI</a></li>
+		<li class='menu'><a href="" class='nav' id='cm'>Colour Match</a></li>
+		<li class='menu'><a href="../snake/snake.html" class='nav' id='snai'>Snake</a></li>
+		<li class='menu'><a href="../snake/snake-ai.html" id='round1'>Snake AI</a></li>
+	</ul>	
+</div>
+
+<div id="footer">
+	<div id='line'>
+		<ul id='foot'>
+			<li><a href="../../contact.php"><span class='foottext'>Contact</span></a></li>
+			<li><a href="../../about.php"><span class='foottext'> About</span></a></li>
+			<li id='border'><a href="../../index.html"><span class='foottext'> Home </span></a></li>
+		</ul>
+	</div>
+</div>
+<div id='copy'><p> All Rights Reserved 2015 &copy Kenneth Ankomah. </p> </div>
+		
+<script src="http://code.jquery.com/jquery-latest.js"></script>
+<script src='scripts/slide.js'> </script>		
+<script src='scripts/colourMatch.js'> </script>
+
+</body>
+</html>

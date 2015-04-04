@@ -1,0 +1,48 @@
+
+#flip{
+    position:absolute;
+	width:450px;
+	text-align:center;
+	color:white;
+	top:60px;
+	font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
+	font-size: 15px;
+}
+
+
+#panel{
+    position:relative;
+	width:430px;
+	padding-top:15px;
+	padding-bottom:15px;
+	padding-left:15px;
+	padding-right:15px;
+	color:white;
+	text-align:left;
+	font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
+	font-size: 15px;
+	
+	background: -moz-linear-gradient(top, #FFFFFF 0%, #E3E3E3 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#FFFFFF), color-stop(100%,#E3E3E3)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, #FFFFFF 0%,#E3E3E3 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, #FFFFFF 0%,#E3E3E3 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, #FFFFFF 0%,#E3E3E3 100%); /* IE10+ */
+	background: linear-gradient(top, #FFFFFF 0%,#E3E3E3 100%); 
+	
+	background: black;
+
+	margin-bottom:20px;
+	border:solid 1px #c3c3c3;
+	border-radius:5px;
+	display:none;
+	z-index:0;
+	top:60px;
+}
+
+
+#paragraph{
+	position:relative;
+	left:125px;
+	color:white;
+	top:10px;
+}

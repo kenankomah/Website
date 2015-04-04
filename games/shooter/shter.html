@@ -1,0 +1,88 @@
+<!doctype html>
+<!-- Began on 16 August 2014  -->  
+<html lang="en">
+
+<head>
+	<meta charset= " UTF-8 ">
+	<title> Shooter </title>
+    <link rel="stylesheet" type="text/css" href="styles/myStyles.css">	  
+	<link rel="stylesheet" type="text/css" href="styles/slide.css">
+
+<style>
+
+li #round{
+ 	box-shadow: 0 1px rgba(255,255,255,0.2) inset;
+	-webkit-box-shadow: 0 1px rgba(255,255,255,0.2) inset;
+	border-color: #c3c3c3 !important;
+	background: #4D4D4D; /* Old browsers */
+	background: -moz-linear-gradient(top, #C3C3C3 0%, #919191 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#C3C3C3 ), color-stop(100%,#919191)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, #C3C3C3 0%, #919191 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, #C3C3C3 0%, #919191 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, #C3C3C3  0%, #919191 100%); /* IE10+ */
+	background: linear-gradient(top, #C3C3C3 0%, #919191 100%); /* W3C */
+	color:#000;
+	/*border: solid 1px #c3c3c3;*/
+}
+
+</style>
+	
+</head>
+
+<body onkeydown = 'keyDown(event);' >
+
+<div id='centre'>
+
+	<center> 
+		<canvas id="canvas" width="800" height="500" onclick="myFunction()"></canvas>
+			<center> 
+				<div id="pause">
+					<h3 id="one" onclick="pause()">Pause</h3> 
+				</div>
+			</center>
+	</center>
+
+<h1> Shooter Rules and Details</h1>
+
+<div id='paragraph'>
+<p> The bars below will give you some information about the game. Click on them to either expand them for more information or to hide them again. </p>
+</div>
+
+<div id='container'> 
+<div id="flip" onclick='rules()' style="cursor:pointer">Show Rules</div>
+<div id="panel"><b>Aim:</b> The Aim of this game is to shoot all the circles and the enemy shooter whilst avoiding collisions or being shot.<br/><br/><b>How to play:</b> You can control the triangular player using the arrow keys. The left arrow key will rotate the player in an anti-clockwise direction and the right arrow key in a clockwise direction. Use the up arrow key to move forwards and the down key to reverse. Use the space bar as another way to pause or play the game.<br/><br/>100 points are deducted if you get shot or hit and your health will also reduce, if your health runs out then you will lose the game. Bonus points are available for shot accuracy. </div>
+
+<div id="flip1" onclick='info()' style="cursor:pointer">More Details</div>
+<div id="panel1"><b>Background:</b> This game is a variation of old arcade games such as <a id='wiki' href='http://en.wikipedia.org/wiki/Asteroids_(video_game)' target="_blank">Asteroids</a>. <br/><br/><b>Technical info:</b> I used the HTML5 canvas element to create the graphics for the game. For the sound I used the JavaScript audio object. <br/><br/>The animation and programming was all done with JavaScript.<br/><br/> The explosion effects were done using sprites.</div>
+
+</div>
+	<ul>
+		<li class='menu'><a href="" id='round'>Shooter</a></li>
+		<li class='menu'><a href="shter-ai.html" class='nav' id='shooter'>Shooter AI</a></li>
+		<li class='menu'><a href="../colourmatch/cm.html" class='nav' id='cm'>Colour Match</a></li>
+		<li class='menu'><a href="../snake/snake.html" class='nav' id='snai'>Snake</a></li>
+		<li class='menu'><a href="../snake/snake-ai.html" id='round1'>Snake AI</a></li>
+	</ul>
+</div>
+
+
+<div id="footer">
+	<div id='line'>
+		<ul id='foot'>
+			<li><a href="../../contact.php"><span class='foottext'>Contact</span></a></li>
+			<li><a href="../../about.php"><span class='foottext'> About</span></a></li>
+			<li id='border'><a href="../../index.html"><span class='foottext'> Home </span></a></li>
+		</ul>
+	</div>
+</div>
+<div id='copy'><p> All Rights Reserved 2015 &copy Kenneth Ankomah. </p> </div>
+
+	
+<script src="scripts/shooter.js"></script>
+<script src="http://code.jquery.com/jquery-latest.js"></script>	
+<script src="scripts/slide.js"></script>
+
+	
+</body>
+
+</html>
