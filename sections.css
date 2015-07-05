@@ -1,7 +1,7 @@
 	*{ 
 		margin: 0px;
 	    padding: 0px;
-		}
+	}
  
 	body {
 		font-family:verdana;
@@ -9,32 +9,15 @@
 		padding: 50px;
 		margin: 0 auto; 
 	 	width: 935px;
-		height:800px;
-		/*border: 1px solid black;*/
-		}
-		
-	h1 {
-	   text-align:center;
-	   margin-bottom: 50px;
-	   margin-top: 50px;
-	   font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
-		font-size:26px;
-	   }
-	 
-	p{
-		font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
-		font-size:17px;
-		padding-left:20px;
-		padding-right:40px;
-	}	 
-	   
+		height:500px;
+	}
+	
    /* rules for navigation menu */
-   /* ================================================= */
-    
+
 	ul#navmenu, ul.sub1, ul.sub2 {
 		list-style-type: none;
 		font-size: 9pt;
-	    }  
+	}  
    
     ul#navmenu li{
 		width: 156px;
@@ -42,7 +25,6 @@
 		position: relative;
         float:left;	
 		text-transform: uppercase;
-    /*    margin-right: 0px;	*/
     }    
 	   
 	ul#navmenu a {
@@ -53,7 +35,6 @@
 		line-height:25px; /* this controls the vertical position of the text */
 		background-color:#FFF;
 		border: 1px solid #CCC;
-	/*	border-radius: 5px;*/
 		background: -moz-linear-gradient(top, #FFFFFF 0%, #E3E3E3 100%); /* FF3.6+ */
 		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#FFFFFF), color-stop(100%,#E3E3E3)); /* Chrome,Safari4+ */
 		background: -webkit-linear-gradient(top, #FFFFFF 0%,#E3E3E3 100%); /* Chrome10+,Safari5.1+ */
@@ -62,61 +43,48 @@
 		background: linear-gradient(top, #FFFFFF 0%,#E3E3E3 100%); /* W3C */
 		padding: 10px 15px;
 		color: black;
-	/*	float:left;	*/
-	    }
+	}
 		
-	
-	/*ul#navmenu .sub1 a{
-		margin-top:0px;	
-	    }*/
-	
+		
 	ul#navmenu .sub2 a{
 	    margin-left:36px;
 	}
-
-	ul#navmenu li:hover > a { /* on hovering over a list item we want the anchor tag that is a direct child of that list item to change color */
-	  /*  background-color:#CFC;*/
-		box-shadow: 0 1px rgba(255,255,255,0.2) inset;
-	-webkit-box-shadow: 0 1px rgba(255,255,255,0.2) inset;
-	border-color:#919191;
-	background: #4D4D4D; /* Old browsers */
-	border-color: #262626 !important;
 	
-	background: -moz-linear-gradient(top, #4D4D4D 0%, #262626 100%); /* FF3.6+ */
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#4D4D4D), color-stop(100%,#262626)); /* Chrome,Safari4+ */
-	background: -webkit-linear-gradient(top, #4D4D4D 0%,#262626 100%); /* Chrome10+,Safari5.1+ */
-	background: -o-linear-gradient(top, #4D4D4D 0%,#262626 100%); /* Opera 11.10+ */
-	background: -ms-linear-gradient(top, #4D4D4D 0%,#262626 100%); /* IE10+ */
-	background: linear-gradient(top, #4D4D4D 0%,#262626 100%); /* W3C */
-	color: #FFF;
-		}
+	ul#navmenu li:hover > a { /* on hovering over a list item we want the anchor tag that is a direct child of that list item to change color */
+		box-shadow: 0 1px rgba(255,255,255,0.2) inset;
+		-webkit-box-shadow: 0 1px rgba(255,255,255,0.2) inset;
+		border-color:#919191;
+		background: #4D4D4D; /* Old browsers */
+		border-color: #262626 !important;
+		background: -moz-linear-gradient(top, #4D4D4D 0%, #262626 100%); /* FF3.6+ */
+		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#4D4D4D), color-stop(100%,#262626)); /* Chrome,Safari4+ */
+		background: -webkit-linear-gradient(top, #4D4D4D 0%,#262626 100%); /* Chrome10+,Safari5.1+ */
+		background: -o-linear-gradient(top, #4D4D4D 0%,#262626 100%); /* Opera 11.10+ */
+		background: -ms-linear-gradient(top, #4D4D4D 0%,#262626 100%); /* IE10+ */
+		background: linear-gradient(top, #4D4D4D 0%,#262626 100%); /* W3C */
+		color: #FFF;
+	}
 		
 	ul#navmenu li a:hover{
-		/*background-color: #FF0;*/
 		box-shadow: 0 1px rgba(255,255,255,0.2) inset;
-	-webkit-box-shadow: 0 1px rgba(255,255,255,0.2) inset;
-	
-	border-color: #262626 !important;
-	background: #4D4D4D; /* Old browsers */
-	background: -moz-linear-gradient(top, #4D4D4D 0%, #262626 100%); /* FF3.6+ */
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#4D4D4D), color-stop(100%,#262626)); /* Chrome,Safari4+ */
-	background: -webkit-linear-gradient(top, #4D4D4D 0%,#262626 100%); /* Chrome10+,Safari5.1+ */
-	background: -o-linear-gradient(top, #4D4D4D 0%,#262626 100%); /* Opera 11.10+ */
-	background: -ms-linear-gradient(top, #4D4D4D 0%,#262626 100%); /* IE10+ */
-	background: linear-gradient(top, #4D4D4D 0%,#262626 100%); /* W3C */
-	/*color: #FFF;*/
+		-webkit-box-shadow: 0 1px rgba(255,255,255,0.2) inset;
+		
+		border-color: #262626 !important;
+		background: #4D4D4D; /* Old browsers */
+		background: -moz-linear-gradient(top, #4D4D4D 0%, #262626 100%); /* FF3.6+ */
+		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#4D4D4D), color-stop(100%,#262626)); /* Chrome,Safari4+ */
+		background: -webkit-linear-gradient(top, #4D4D4D 0%,#262626 100%); /* Chrome10+,Safari5.1+ */
+		background: -o-linear-gradient(top, #4D4D4D 0%,#262626 100%); /* Opera 11.10+ */
+		background: -ms-linear-gradient(top, #4D4D4D 0%,#262626 100%); /* IE10+ */
+		background: linear-gradient(top, #4D4D4D 0%,#262626 100%); /* W3C */
 	}
-	
-	
 	   
 	ul#navmenu ul.sub1{
 		display:none;  
-		/*display: absolute;*/
 		position: absolute;
-		top: 47px;  /*26px*/
+		top: 47px; 
 		left: 0px;
 		z-index:1;
-	/*	z-index: -1;*/
 	}
 		
 	ul#navmenu ul.sub2{
@@ -125,7 +93,7 @@
 		top: 0px;
 		left: 120px;
 		z-index:1;
-        }	
+    }	
 		
 	ul#navmenu li:hover .sub1{
 	    display:block;
@@ -133,22 +101,8 @@
 		}
 		
 	ul#navmenu .sub1 li:hover .sub2{ /* if i'm hovering over a list item that is within my sub1 within my ul#navmenu then the sub2 which is it's descendant will*/
-	    display:block;              /* be diplayed as a block */
-		}	
-		
-	.darrow{
-		font-size: 10pt;
-		position: absolute;
-		top: 5px;
-		right: 4px;
-		}
-		
-	.rarrow{
-		font-size: 10pt;
-		position: absolute;
-		top: 9px;
-		right: 4px;
-	}
+	    display:block;             
+	}	
 		
 	
 	#navmenu li #round{
@@ -161,7 +115,6 @@
 	}	
 	
 	#container {
-	/*	border: solid black 1px;*/
 		width: 938px;
 		height: 75px;
 		margin: 5px auto 0;
@@ -174,25 +127,13 @@
 		border: solid 1px #c3c3c3;
 	}
 	
-	
-	#sidebar {
-		float: left;
-		height: 750px;
-		/*width: 25%; */
-		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#FFFFFF), color-stop(100%,#b5b5b5)); /* Chrome,Safari4+ */
-		background: -webkit-linear-gradient(top, #FFFFFF 0%,#b5b5b5 100%); /* Chrome10+,Safari5.1+ */
-		background: -moz-linear-gradient(top, #FFFFFF 0%, #b5b5b5 100%);
-		background: -o-linear-gradient(top, #FFFFFF 0%, #b5b5b5 100%); /* Opera 11.10+ */
-		background: -ms-linear-gradient(top, #FFFFFF  0%, #b5b5b5 100%); /* IE10+ */
-		background: linear-gradient(top, #FFFFFF 0%, #b5b5b5 100%); /* W3C */
-		border-radius: 20px;
-	}
-
-
 	#content {
+		position:relative;
+		top:-15px;
 		float: right;
-		height: 400px;
-		width: 96.5%;
+		height: 250px;
+		width: 96%;
+		font-size:15px;
 		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#FFFFFF), color-stop(100%,#b5b5b5)); /* Chrome,Safari4+ */
 		background: -webkit-linear-gradient(top, #FFFFFF 0%,#b5b5b5 100%); /* Chrome10+,Safari5.1+ */
 		background: -moz-linear-gradient(top, #FFFFFF 0%, #b5b5b5 100%);
@@ -204,9 +145,15 @@
 		padding-left: 30px;
 		border: solid 1px #c3c3c3;
 	}
+	
+	p{
+		margin-right:25px;
+	}
 
 
 	#footer {
+		position:relative;
+		top:-18px;
 		height: 177px;
 		width: 100%;
 		clear: both;
@@ -222,146 +169,55 @@
 		border: solid 1px #c3c3c3;
 	}	
 	
-	
-	#sidebar li{
-		list-style-type: none;
-	}
-	
-	.centre{
-		text-align: left;
-	/*	padding: 16px;*/
-	}
-	
-	.colour{
-		color: blue;
-		text-transform: uppercase;
-		/*font-size: 20px;*/
-		padding-left:16px;
-	}
-	
-	.centre li{
-		font-size: 13.5px;
-	/*	color: #4c4c4c;*/
-	}
-	
+		
 	#navmenu li a{
 		font-size: 12px; 
 	}
 	
-	a:link {
-		text-decoration: none;
-		color: #4c4c4c;
-	}
-
-	a:visited {
-		text-decoration: none;
-		color: #4c4c4c;
-	}
 	
-	.sidebar{
-		height:30px;  /*30px;*/
-		width:200px;
-		/*border: 1px black solid; */
-		padding-left: 32px;
-		padding-top: 10px;
-	}
 	
 	h4{
 		text-align:center;
 		padding-top: 8px;	
 	}
     
-	#content li{
-		list-style-type: none;
-	}
 	
-	.content{
-		height:180px; 
-		width:600px;
-		/*border: 1px black solid;*/
-		position: relative;
-		top: 30px;
-		/*border-top: 1px #4c4c4c solid;*/
-		border-top: 1px #b2b2b2 solid;
-		margin:0px;
-	}
-	
-	.images{
-		position: relative;
-		left: 300px;
-	}
-	
-	.text{
-		position: absolute;
-		top: 430px;
-		/*border: 1px black solid;*/
-		width:250px;
-		height:100px;
-		overflow: auto;
-		z-index:0;
-		font-family: arial;
-	}
-	
-	.text1{
-		position: absolute;
-		top: 615px;
-		/*border: 1px black solid;*/
-		width:250px;
-		height:100px;
-		overflow: auto;
-		z-index:0;
-		font-family: arial;
-	}
-	
-	.text2{
-		position: absolute;
-		top: 800px;
-		/*border: 1px black solid;*/
-		width:250px;
-		height:100px;
-		overflow: auto;
-		z-index:0;
-		font-family: arial;
-	}
-	
-	.text3{
-		position: absolute;
-		top: 985px;
-		/*border: 1px black solid;*/
-		width:250px;
-		height:100px;
-		overflow: auto;
-		z-index:0;
-		font-family: arial;
-	}
-	
-	
-	.content li{
-		color:#339999;
-	}
-	
-	a:visited .title{
+	a:visited {
+	    color:#339999;
 		text-decoration: none;
-		color:#339999;
 	}
+	
+	
+	a:link {
+	    color:#339999;
+		text-decoration: none;
+	}
+	
+	
+	h1{
+		position: absolute;
+		top:130px;
+		left:350px;
+		font-size:40px;
+		font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
+		font-size: 30px;
+	}
+	
+	#content h1{
+		position:relative;
+		top:20px;	
+	}
+		
+	#content p{
+		position:relative;
+		top:40px;	
+	}	
+	
 	
 	a:hover .title{
 		color:blue;
 	}
 	
-	
-	#home{
-		position: absolute;
-		top:80px;
-		left:350px;
-		font-size:40px;
-		font-family: garamond, Arial Narrow;
-	}
-	
-		
-	#header{
-		position:relative;
-	}
 	
 	#foot li{
 	    float:right;
@@ -390,30 +246,581 @@
 		padding-left:12px;
 	}
 	
+	
 	a:hover .foottext{
 		color:#0000b3;
 	}
 	
+		
 	.foottext{
 		color:#194b4b;
 	}
 	
+			
+	#header{
+		position:relative;
+	}
 	
-	#copy p{
+	
+	#copy{
 	  	position:relative;
-		top:-60px;
-		left:630px;
+		top:115px;
+		left:330px;
 		font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
-		font-size: 12px;
 		width:350px;
 		height:0px;
+		font-size: 12px;
 	}
 	
-	#home{
-		position: absolute;
-		top:80px;
-		left:350px;
-		font-size:40px;
-		font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
-		font-size: 30px;
+		
+	#header{
+		width:930px;
+		height:230px;
 	}
+	
+	#header img{
+		width:935px;
+		height:230px;
+	}
+	
+	
+@media only screen and (max-width: 1366px){
+	body {
+		padding: 0px;
+		margin: 0 auto; 
+		width:90%;
+		padding-top:50px;
+		height:500px;
+	}
+	  
+   
+    html{
+		overflow-x: hidden;
+		height:500px;
+	}
+	
+	a{
+		z-index:2;
+	}
+	
+	/* rules for navigation menu */
+	  
+	ul#navmenu, ul.sub1, ul.sub2 {
+		z-index:2;
+	}  
+	
+	   
+    #navmenu li{
+		width: 158px;
+	}    
+	
+	
+	#navmenu a {
+		width: 127px;
+		width: 156px;
+	}
+		
+			
+	ul#navmenu .sub2 a{
+	    z-index:2;
+	}
+			
+	ul#navmenu ul.sub2{
+		left: 120px;
+	}	
+		
+	
+	#navmenu{
+		position:relative;
+		padding-left:40px;	
+	}
+	
+	
+	.navtext{
+		font-size:12px;
+	}
+	
+	center{
+		margin:0 auto;
+	}
+	
+	
+	#container {
+	     position:relative;
+	    left:5px;
+	  	width:990px;
+		height:60px;
+		padding-right:0px;
+	}	
+
+	
+	img{
+		position:relative;
+		top: -10px;
+		border-radius: 20px;
+		border: solid 1px #c3c3c3;
+	}
+	
+	
+	#content {
+	    position:relative;
+		top:0px;
+		clear: both;
+		left:-1%;
+		width: 94%;
+		margin-left:10%;
+		z-index:1;
+	}
+	
+	
+	#container1{
+		margin: 5px auto 0;
+		width:80%;
+	}
+
+
+	#footer {
+		left:11%;
+		top:0px;
+		width: 78%;
+	}	
+			
+	
+	h1{
+	    position:relative;
+		top:-100px;
+		left:0%;
+		text-align:center;
+	}
+		
+	
+	#foot li{
+	    text-align:center;		
+	}
+	
+	
+	#line{
+	  	width:50%;
+		left:49%;
+	}
+	
+	
+	#header{
+		position:relative;
+		width:100%;
+		height:230px;
+	}
+	
+	
+	#header img{
+		top:0px;
+		height:223px;
+		left:10.8%;
+		width:78%;
+	}
+	
+	#copy{
+	  	left:36%;
+	}
+	
+		
+	#navmenu{
+		position:relative;
+		left:-2%;
+	}
+}	
+
+
+@media only screen and (max-width: 1000px){
+	ul#navmenu li{
+		position: relative;
+		width: 99.5%;	
+		text-align: center;
+		clear: both;
+		text-transform: uppercase;
+		left:55px;
+	} 
+
+	ul#navmenu a{
+		width: 100%;
+	}	
+	
+	#content{
+		position:relative;
+		top:10px;
+		width: 94%;
+		
+	}	
+	
+	
+	#footer {
+		position:relative;
+		top:5px;
+        left:11%;		
+		width:78%;
+	}	
+	
+	
+	#header{
+		position:relative;
+	    width:100%;
+	}
+		
+		
+	#container{
+		z-index:3;
+	}
+	
+	
+	#navmenu li #round{
+		border-left-color: #BABABA; 
+		border-radius: 25px 25px 0 0;		
+	}
+
+	#navmenu li #round1 {
+		border-radius: 0 0 25px 25px;
+	}	
+	
+	#container {
+		position: relative;
+	   	left:-77px;
+	   	width:80%;
+	}
+		
+		
+	ul#navmenu ul.sub1{
+		display:none; 
+		position: absolute;
+		top: 47px;  
+		left: 0px;
+		width:100%;
+		z-index:1;
+	}
+	
+	ul#navmenu ul.sub1 a{
+		position: relative;
+		height:10px;
+		width:100%;
+		left:-55px;
+		width:50%;
+	}
+	
+	
+	ul#navmenu ul.sub2{
+		left:41%;
+		width:50%;
+    }
+	
+}
+
+
+@media only screen and (max-width: 960px){
+	#content{
+		height:300px;
+	}
+}	
+
+
+@media only screen and (max-width: 880px){
+	ul#navmenu ul.sub2{
+		left:40%;
+	}
+}
+
+@media only screen and (max-width: 870px){
+	#footer{
+		left:10%;
+		width: 79%;
+	}
+}
+
+@media only screen and (max-width: 860px){
+	#content{
+		width: 92.5%;
+	}
+	
+	#footer{
+		left:11%;
+		width: 78%;
+	}
+}
+
+@media only screen and (max-width: 845px){
+	ul#navmenu ul.sub2{
+		left:39%;
+	}
+}	
+
+@media only screen and (max-width: 800px){
+	#content{
+		left:-0.5%;
+		width: 92.5%;
+	}	
+}
+
+
+@media only screen and (max-width: 730px){
+
+	#container{
+		position:relative;
+		left:-87px;
+		top:-5px;
+		width: 101.5%;
+		margin-right:0px;		
+	}
+	
+	#content{
+		left:-2%;
+		top:0px;
+		width: 93%;
+	}
+	
+	
+	#container1{
+		position:relative;
+		width: 100%;
+		margin-right:0%;
+		z-index:0;
+	}
+	
+
+	body {
+		width: 95%;
+		z-index:-1;
+	}
+		
+	
+	#header{
+		width:98.5%;
+	}
+	
+	#header img{
+		width:99%;
+		left:1px;
+	}
+	
+		
+	#footer{
+		top:-12px;
+		left:2px;
+		width: 97.5%;
+		margin-right:-100px;
+	}	
+}
+
+
+
+@media only screen and (max-width: 600px){
+	#line{
+		position:relative;
+		left:49%;
+		width:50%;
+	}
+	
+	#copy{
+		left:20%;
+		font-size:10px;
+	}	
+	
+	.foottext{
+	    position:relative;
+		left:-7px;
+		font-size:11px;		
+	}
+	
+	#foot li{
+		width:25px;
+	}
+	
+	h1{
+		font-size:25px;
+	}
+	
+	ul#navmenu ul.sub2{
+		left:38.5%;
+	}
+}
+
+
+@media only screen and (max-width: 595px){
+	#content{
+		left:-10px;
+	}
+}	
+
+@media only screen and (max-width: 564px){
+	.fontsize{
+		font-size:11px;
+	}
+}
+
+
+
+@media only screen and (max-width: 555px){
+	#content{
+		height:350px;
+	}
+}	
+
+
+@media only screen and (max-width: 539px){
+	#navmenu .sub2 .flockwalk{
+		line-height:12px;
+		padding-bottom:15px;
+	}
+}
+
+
+@media only screen and (max-width: 530px){
+	#content{
+		left:-4px;
+	}
+}	
+
+
+@media only screen and (max-width: 500px){
+	ul#navmenu ul.sub2{
+		left:35%;
+	}
+}
+
+
+@media only screen and (max-width: 470px){
+	#content{
+		left:-1px;
+	}
+}	
+
+
+@media only screen and (max-width: 450px){
+	#content{
+		height:400px;
+	}
+}
+
+@media only screen and (max-width: 410px){
+	
+	#content{
+		width: 92%;
+		left:2px;
+	}
+	
+	#footer{
+		left:0px;
+		width: 100%;
+	}
+	
+		
+	#line{
+		left:30%;
+		width:200px;
+	}
+	
+	h1{
+		font-size:20px;
+	}
+	
+	.fontsize{
+		font-size:11px;
+	}	
+    
+	#container1{
+		z-index:0;
+	}
+	
+}
+
+
+@media only screen and (max-width: 360px){
+  	#content{
+		width: 91%;
+		height:420px;
+	}
+	
+	.fontsize{
+		font-size:11px;
+	}
+	
+	p{
+		font-size:14px;
+	}
+				
+		
+	ul#navmenu ul.sub2{
+		left:29%;
+	}
+	
+	#title{
+		position:relative;
+		top:35px;
+	}
+	
+	body{
+		padding-top:10px;
+	}
+	
+	#header img{
+		height:100px;
+		left:2px;
+	}
+	
+	#container{
+		position:relative;
+		top:-128px;
+	}
+	
+	#container1{
+		position:relative;
+		top:-122px;
+	}
+	
+	#footer{
+		position:relative;
+		top:-135px;	
+		left:-1.5px;
+		height:120px;
+	}
+	
+	
+	#line{
+		top:30px;
+	}
+	
+	#copy{
+		top:55px;
+	}
+
+	ul#navmenu a {
+		height: 15px;
+	}
+	
+	ul#navmenu ul.sub1{
+		display:none; 
+		position: absolute;
+		top: 37px;  
+		left: 0px;
+		width:100%;
+		z-index:1;
+	}
+	
+	ul#navmenu ul.sub1 a{
+		position: relative;
+		height:8px;
+		left:-55px;
+		width:50%;
+		line-height:5px;
+	}
+	
+	
+	ul#navmenu ul.sub2{
+		left:31%;
+		width:70%;
+		height:8px;
+    }
+	
+	
+	#content{
+		position:relative;
+		top:0px;	
+	}
+}
